@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 92%;
+  max-width: 420px;
+  background: #131313;
+  border: 1.5px solid gold;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 0 20px gold, 0 0 25px #555 inset;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  color: gold;
+  margin: 0;
+  font-weight: 600;
+}
+
+.tagline {
+  text-align: center;
+  color: #cfcfcf;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  background: #0e0e0e;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+  scroll-behavior: smooth;
+}
+
+.message {
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  line-height: 1.4;
+  max-width: 85%;
+}
+
+.user {
+  background: linear-gradient(90deg, #ffd70055, #ffd70022);
+  align-self: flex-end;
+  color: #fff;
+  border: 1px solid gold;
+}
+
+.ai {
+  background: #191919;
+  border: 1px solid #333;
+  color: #f1f1f1;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  background: gold;
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffcf40;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: gold;
+  border-radius: 10px;
+}
